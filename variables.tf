@@ -27,3 +27,8 @@ variable "vm" {
   type        = string
   default     = "linux_vm"
 }
+
+variable "comp_name" {
+  description = "specify the comp_name name"
+  type        = string
+}
