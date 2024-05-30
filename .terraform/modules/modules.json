@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"postgresql","Source":"registry.terraform.io/Azure/postgresql/azurerm","Version":"3.2.0","Dir":".terraform/modules/postgresql"}]}
