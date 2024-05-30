@@ -22,7 +22,6 @@ resource "azurerm_linux_virtual_machine" "vm" {
   resource_group_name = azurerm_resource_group.test.name
   location          = azurerm_resource_group.test.location
   vm_size         = "Standard_DS1_v2"
-  admin_username      = "adminuser"
   network_interface_ids = [azurerm_network_interface.nic.id]
   admin_username = "firstvmuser"
   admin_password = "techchallenge123!"
@@ -37,7 +36,6 @@ module "postgresql" {
   sku_name          = "B_Gen5_1"
   administrator_login = "Iadmin"
   administrator_login_password = "mydatabse1234!"
-  version             = "11"
   storage_mb          = 5120
   backup_retention_days = 7
   geo_redundant_backup = "Disabled"
